@@ -30,14 +30,18 @@ public class MyReceiverLlamadas extends BroadcastReceiver {
                         mainActivity.enviarMensajeLlamada(incomingNumber);
 
                         flag=true;
+                    }else{
+                        flag = false;
                     }
                 }
             }
 
         },PhoneStateListener.LISTEN_CALL_STATE);
-        flag=false;
 
 
     }
+
+
+
 
 }

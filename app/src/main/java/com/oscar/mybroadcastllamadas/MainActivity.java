@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         smsManager.sendTextMessage(numero, null, mensaje,null ,null);
 
+
     }
 
     public void enviarMensajeLlamada(String numero){

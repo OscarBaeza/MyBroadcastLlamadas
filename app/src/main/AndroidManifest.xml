@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <uses-permission android:name="android.permission.READ_CALL_LOG"></uses-permission>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +16,8 @@
         <receiver
             android:name=".Receiver.MyReceiverLlamadas"
             android:enabled="true"
-            android:exported="true"
-            android:permission="android.intent.action.PHONE_STATE">
+            android:exported="true">
+            <!-- android:permission="android.intent.action.PHONE_STATE"-->
 
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>
